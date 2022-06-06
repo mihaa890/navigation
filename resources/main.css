@@ -1,0 +1,487 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+main{
+    height: calc(100% - 50px);
+}
+header{
+    width: 100%;
+    height: 50px;
+    background-color: #231f20;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+main{
+    display: flex;
+    flex-direction: row;
+
+}
+main aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 50px 0px 100px;
+    background-color: #f2ede8;
+}
+main aside .aside-wrapper{
+    min-height: 70%;
+}
+main aside .aside-wrapper nav ul{
+    list-style-type: none;
+    padding:0;
+}
+main aside .aside-wrapper nav ul li {
+    position: relative;
+    cursor: pointer;
+}
+main aside .aside-wrapper nav ul li a.selected::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 6px;
+    background-color: #e8e0d8;
+    left:0;
+    bottom: 0;
+}
+main aside .aside-wrapper nav ul li a {
+    font-weight: 700;
+    color:#231f20;
+    white-space: pre;
+}
+main section{
+    width: 100%;
+}
+section .content-wrapper{
+    display: flex;
+    flex-direction: column;
+    padding:50px;
+}
+section .content-wrapper .content{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+}
+section .content-wrapper .content .left-section-wrapper{
+    background-color: #f8f5f2;
+    width: 40%;
+}
+section .content-wrapper .content .left-section-wrapper img{
+    object-fit: contain;
+    width: 100%;
+}
+section .content-wrapper .content .right-section-wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+section .content-wrapper .content .right-section-wrapper .info-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+section .content-wrapper .content .right-section-wrapper .info-section .left{
+    display: flex;
+    flex-direction: column;
+    gap:10px;   
+}
+section .content-wrapper .content .right-section-wrapper .info-section .left .info{
+    display: flex;
+    flex-direction: column;
+}
+section .content-wrapper .content .right-section-wrapper .info-section .left .info span{
+    font-weight: 500;
+    font-size: 14px;
+}
+section .content-wrapper .content .right-section-wrapper .info-section .left .info span:nth-child(2){
+    font-weight: 700;
+    font-size: 20px;
+}
+section .content-wrapper .content .right-section-wrapper .info-section .right .info nav ul{ 
+    list-style-type: none;
+    padding:0;
+    margin: 0;
+    text-align: right;
+
+}
+section .content-wrapper .content .right-section-wrapper .lower-section .other-items{
+    display: flex;
+    flex-direction: row;
+    gap:25px
+    
+}
+section .content-wrapper .content .right-section-wrapper .lower-section span {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+section .content-wrapper .content .right-section-wrapper .lower-section .other-items .item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 130px;
+    width: 130px;
+    background-color: #f8f5f2;
+}
+section .content-wrapper .content .right-section-wrapper .lower-section .other-items .item img{
+    width: 80%;
+    object-fit: contain;
+    
+}
+section .content-wrapper .content .right-section-wrapper .lower-section .other-items .item:last-child{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hidden{
+    display: none;
+}
+section .content-wrapper .content .right-section-wrapper .info-section .right .info nav ul a {
+    cursor:pointer;
+    font-weight: 600;
+    
+}
+
+section .reward-status-header-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding:20px 0px;
+}
+section .reward-status-header-wrapper .boundary-logo-wrapper img{
+    width: 200px;;
+    object-fit: contain;
+    position: absolute;
+    left: 20px;
+}
+section .reward-status-header-wrapper .icons-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:4rem;
+    padding-right: 20px;
+}
+section .reward-status-header-wrapper .icons-wrapper img{
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+section .reward-status-header-wrapper .icons-wrapper span{
+    font-weight: 500;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+section .content-reward-status {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+section .content-reward-status .left-section-reward-status{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width:20%;
+    padding-bottom:35px;
+}
+
+section .content-reward-status .right-section-reward-status{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width:50%;
+}
+section .content-reward-status .right-section-reward-status .lower-section-reward-status{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    gap:10rem;
+}
+section .content-reward-status .right-section-reward-status .lower-section-reward-status img{
+    width: 80px;
+    object-fit: contain;
+}
+section .content-reward-status .right-section-reward-status .upper-section-reward-status{
+   display: flex;
+   flex-direction: column;
+
+}
+section .content-reward-status .right-section-reward-status .upper-section-reward-status {
+    display: flex;
+    flex-wrap: wrap;
+}
+section .content-reward-status .right-section-reward-status .upper-section-reward-status .info-reward{
+    display: flex;
+    flex-direction: column;
+    flex:1 1 30%;
+}
+section .content-reward-status .right-section-reward-status .upper-section-reward-status .info-reward span:nth-child(1){
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+section .content-reward-status .right-section-reward-status .upper-section-reward-status .info-reward span:nth-child(2){
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+section .reward-status-container{
+    padding: 10px 50px;
+}
+section .reward-status-container .title-reward h1 {
+    font-weight: 700;
+    font-size: 40px;
+    margin:0;
+    line-height: 1;
+}
+section .reward-status-container .title-reward h1:last-child {
+    margin-bottom: 25px;
+}
+section .content-reward-status .left-section-reward-status span{
+    font-weight: 600;
+    font-size: 18px;
+}
+
+section .order-details-wrapper{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding:20px 20px;
+   
+}
+section .order-details-wrapper .small-title{
+    text-transform: capitalize;
+    font-size: 18px;
+    padding:10px 20px;
+}
+section .order-details-wrapper .titles-wrapper{
+    display: flex;
+    flex-direction: row;
+    padding:20px 20px;
+    justify-content: space-between;
+}
+section .order-details-wrapper .titles-wrapper span{
+    display: flex;
+    flex-direction: column;
+}
+section .order-details-wrapper .titles-wrapper .left-title span{
+    font-weight: 700;
+    font-size: 40px;
+}
+.right-title{
+    margin-top:4rem;
+}
+section .order-details-wrapper .titles-wrapper .right-title span{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.5;
+    min-width: 10rem;
+}
+section .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+    padding:20px 20px;
+}
+section .content-wrapper .upper-section-order-details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 20px;
+    padding-bottom:25px;
+
+}
+section .content-wrapper .upper-section-order-details span{
+    min-width: 5rem;
+    font-weight: 600;
+}
+section .content-wrapper .lower-section-order-details span{
+    min-width: 5rem;
+    font-weight: 600;
+}
+section .content-wrapper .lower-section-order-details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+section .content-wrapper .upper-section-order-details .upper-info{
+    display: flex;
+    flex-direction: column;
+    width:50%;
+}
+section .content-wrapper .upper-section-order-details .upper-status-info{
+    display: flex;
+    flex-direction: column;
+    min-width: 10rem;
+}
+section .content-wrapper .lower-section-order-details .lower-status-info {
+    display: flex;
+    flex-direction: column;
+    min-width: 10rem;
+}
+section .content-wrapper .lower-section-order-details .lower-info{
+    display: flex;
+    flex-direction: column;
+    width:50%;
+}
+section .account-wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding:20px 20px;
+}
+section .account-wrapper .account-title{
+    padding:0px 20px;
+
+}
+section .account-wrapper span{
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    font-size: 35px;
+    
+}
+section .account-wrapper .form-wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding:5px 20px;
+    gap:2rem;
+}
+section .account-wrapper .form-wrapper input{
+    width: 30%;
+    border: 1px solid #ccc;
+    font-size: 18px;
+    font-weight: 600;
+    padding:20px 20px;
+    margin-right:15px;
+}
+section .account-wrapper .button-wrapper{
+    width: 100%;
+    padding:5px 20px;
+}
+section .account-wrapper .save-button{
+    width: 30%;
+    font-size: 15px;
+    font-weight: 600;
+    padding:20px 20px;
+    color:white;
+    background-color: #000000;
+    text-transform: uppercase;
+}
+section .account-wrapper p{
+    font-size: 18px;
+    font-weight: 600;
+    padding:0px 20px;
+}
+section .account-wrapper .cards-wrapper{
+    display: flex;
+    flex-direction: row;
+    gap:1rem;
+    width: 100%;
+    padding:0px 20px;
+}
+section .account-wrapper .cards-wrapper .left-card-info, .right-card-info{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding:20px 20px;
+    background-color: #000000;
+    border-radius: 20px;
+}
+section .account-wrapper .cards-wrapper .left-card-info span{
+    font-size: 14px;
+    color:white;
+}
+section .account-wrapper .cards-wrapper .right-card-info span{
+    font-size: 14px;
+    color:white;
+}
+section .payment-wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding:20px 20px;
+}
+section .payment-wrapper .payment-title-wrapper{
+    display: flex;
+    flex-direction: column;
+    padding:20px 20px;
+
+}
+section .payment-wrapper .payment-title-wrapper span{
+    font-weight: 700;
+    font-size: 35px;
+}
+section .payment-wrapper .payment-cards-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap:1rem; 
+    width: 100%;
+    padding:20px 20px;
+}
+section .payment-wrapper .payment-cards-wrapper .upper-cards-wrapper{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    gap:2rem;
+}
+section .payment-wrapper .payment-cards-wrapper .upper-cards-wrapper img{
+    width: 80%;
+    object-fit: contain;
+}
+section .payment-wrapper .payment-cards-wrapper .lower-cards-wrapper{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    gap:2rem;
+}
+section .payment-wrapper .payment-cards-wrapper .lower-cards-wrapper img{
+    width: 80%;
+    object-fit: contain;
+}
+section .payment-wrapper .payment-cards-wrapper .lower-cards-wrapper .add-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    gap:2rem;
+    background-color: #e6e6e6;
+    border-radius:20px
+}
+section .payment-wrapper .payment-cards-wrapper .lower-cards-wrapper .add-card img{
+    width: 30%;
+    object-fit: contain;
+}
+section .payment-wrapper .payment-cards-wrapper .lower-cards-wrapper .add-card span{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+ 
+
+
+
+
+
