@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 menuItems[j].classList.remove("selected");
             }
             this.classList.add("selected");
-
+            // ced ca aici ai adaugat de 2 ori din greseala, nu impacteaza grav performanta dar e important pt clean code
             this.classList.add("selected");
 
             const dataContent = this.dataset.content;
